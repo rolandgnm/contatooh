@@ -1,9 +1,12 @@
 // config/express.js
 var express = require('express');
-var home = require ( '../app/routes/home' );
+var consign = require('consign');
 
 module.exports = function() {
   var app = express();
+  
+
+  
   
   // variável de ambiente
   app.set ( 'port' , 3000 );
@@ -13,6 +16,12 @@ module.exports = function() {
   // middleware
   app.use ( express.static( './public' ));
   
-  home(app);
+   
+  consign({cwd: 'app'})
+    .include('models')
+    .then('controllers')
+    .then('routes')
+    .into(app);   
+    
   return app;
 };

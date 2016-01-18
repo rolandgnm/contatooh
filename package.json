@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "consign": "^0.1.2",
     "ejs": "^0.8.8",
     "express": "^4.8.8"
   }
