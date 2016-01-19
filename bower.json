@@ -1,0 +1,21 @@
+{
+  "name": "contatooh",
+  "description": "MEAN studies",
+  "main": "server.js",
+  "authors": [
+    "Roland Gabriel <rolandgnm@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/rolandgnm/contatooh",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "1.3"
+  }
+}
